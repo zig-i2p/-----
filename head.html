@@ -1,99 +1,85 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--
     последовательно обеспечивать надлежащую визуализацию документов.
   Любой другой элемент головы должен прийти «после» этих тегов.
  -->
- <!-- Указывает на внешний стиль листа -->
-<link rel="stylesheet" href="https://example.com/styles.css">
-
-<!-- Помогает предотвратить проблемы с дублирующим содержанием -->
-<link rel="canonical" href="https://example.com/article/?page=2">
-
-<!-- Ссылки на HTML-версию текущего документа AMP -->
-<link rel="amphtml" href="https://example.com/path/to/amp-version.html">
-
-<!-- Ссылки на файл JSON, в который указаны учетные данные "установки" для веб-приложений -->
-<link rel="manifest" href="manifest.json">
-
-<!-- Ссылки на информацию об авторе (ы) документа -->
-<link rel="author" href="humans.txt">
-
-<!-- Ссылается на заявление об авторском праве, которое относится к контексту ссылки -->
-<link rel="license" href="copyright.html">
-
-<!-- Дает ссылку на местоположение в документе, которое может быть на другом языке -->
-<link rel="alternate" href="https://es.example.com/" hreflang="es">
-
-<!-- Предоставляет информацию об авторе или другом человеке -->
-<link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
-<link rel="me" href="mailto:name@example.com">
-<link rel="me" href="sms:+15035550125">
-
-<!-- Ссылки на документ, описываемый коллекцией записей, документов или других материалов, представляющих исторический интерес -->
-<link rel="archives" href="https://example.com/archives/">
-
-<!-- Ссылки на ресурсы верхнего уровня в иерархической структуре -->
-<link rel="index" href="https://example.com/article/">
-
-<!-- Обеспечивает самосправу - полезно, когда документ имеет несколько возможных ссылок -->
-<link rel="self" type="application/atom+xml" href="https://example.com/atom.xml">
-
-<!-- Первый, последний, предыдущий и следующий документы в серии документов, соответственно -->
-<link rel="first" href="https://example.com/article/">
-<link rel="last" href="https://example.com/article/?page=42">
-<link rel="prev" href="https://example.com/article/?page=1">
-<link rel="next" href="https://example.com/article/?page=3">
-
-<!-- Используется, когда служба третьей стороны используется для поддержания блога -->
-<link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
-
-<!-- Формы автоматизированный комментарий, когда другой WordPress блог ссылки на ваш блог WordPress или пост -->
-<link rel="pingback" href="https://example.com/xmlrpc.php">
-
-<!-- Уведомляет URL-адрес при ссылке на него в документе -->
-<link rel="webmention" href="https://example.com/webmention">
-
-<!-- Позволяет отправлять сообщения на свой домен с помощью клиента Micropub -->
-<link rel="micropub" href="https://example.com/micropub">
-
-<!-- Открытый поиск -->
-<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
-
-<!-- Каналы -->
-<link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
-<link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
-
-<!-- Предварительная загрузка, предварительная загрузка, предзарядка -->
-<!-- Более подробная информация: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
-<link rel="dns-prefetch" href="//example.com/">
-<link rel="preconnect" href="https://www.example.com/">
-<link rel="prefetch" href="https://www.example.com/">
-<link rel="prerender" href="https://example.com/">
-<link rel="preload" href="image.png" as="image">
-<title>Page Title</title>
-<!-- Для IE 10 и ниже -->
-<!-- место favicon.ico в корневом каталоге - нет тегов необходимо -->
-
-<!-- Значок в самом высоком разрешении нам нужен для -->
-<link rel="icon" sizes="192x192" href="/path/to/icon.png">
-
-<!-- Значок Apple Touch (повторное использование значка 192px.png) -->
-<link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
-
-<!-- Значок вкладки Safari Pinned -->
-<link rel="mask-icon" href="/path/to/icon.svg" color="blue">
+   <!-- Указывает на внешний стиль листа -->
+   <link rel="stylesheet" href="https://example.com/styles.css">
+   <!-- Помогает предотвратить проблемы с дублирующим содержанием -->
+   <link rel="canonical" href="https://example.com/article/?page=2">
+   <!-- Ссылки на HTML-версию текущего документа AMP -->
+   <link rel="amphtml" href="https://example.com/path/to/amp-version.html">
+   <!-- Ссылки на файл JSON, в который указаны учетные данные "установки" для веб-приложений -->
+   <link rel="manifest" href="manifest.json">
+   <!-- Ссылки на информацию об авторе (ы) документа -->
+   <link rel="author" href="humans.txt">
+   <!-- Ссылается на заявление об авторском праве, которое относится к контексту ссылки -->
+   <link rel="license" href="copyright.html">
+   <!-- Дает ссылку на местоположение в документе, которое может быть на другом языке -->
+   <link rel="alternate" href="https://es.example.com/" hreflang="es">
+   <!-- Предоставляет информацию об авторе или другом человеке -->
+   <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
+   <link rel="me" href="mailto:name@example.com">
+   <link rel="me" href="sms:+15035550125">
+   <!-- Ссылки на документ, описываемый коллекцией записей, документов или других материалов, представляющих исторический интерес -->
+   <link rel="archives" href="https://example.com/archives/">
+   <!-- Ссылки на ресурсы верхнего уровня в иерархической структуре -->
+   <link rel="index" href="https://example.com/article/">
+   <!-- Обеспечивает самосправу - полезно, когда документ имеет несколько возможных ссылок -->
+   <link rel="self" type="application/atom+xml" href="https://example.com/atom.xml">
+   <!-- Первый, последний, предыдущий и следующий документы в серии документов, соответственно -->
+   <link rel="first" href="https://example.com/article/">
+   <link rel="last" href="https://example.com/article/?page=42">
+   <link rel="prev" href="https://example.com/article/?page=1">
+   <link rel="next" href="https://example.com/article/?page=3">
+   <!-- Используется, когда служба третьей стороны используется для поддержания блога -->
+   <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
+   <!-- Формы автоматизированный комментарий, когда другой WordPress блог ссылки на ваш блог WordPress или пост -->
+   <link rel="pingback" href="https://example.com/xmlrpc.php">
+   <!-- Уведомляет URL-адрес при ссылке на него в документе -->
+   <link rel="webmention" href="https://example.com/webmention">
+   <!-- Позволяет отправлять сообщения на свой домен с помощью клиента Micropub -->
+   <link rel="micropub" href="https://example.com/micropub">
+   <!-- Открытый поиск -->
+   <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
+   <!-- Каналы -->
+   <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
+   <link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
+   <!-- Предварительная загрузка, предварительная загрузка, предзарядка -->
+   <!-- Более подробная информация: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
+   <link rel="dns-prefetch" href="//example.com/">
+   <link rel="preconnect" href="https://www.example.com/">
+   <link rel="prefetch" href="https://www.example.com/">
+   <link rel="prerender" href="https://example.com/">
+   <link rel="preload" href="image.png" as="image">
+   <title>Page Title</title>
+   <!-- Для IE 10 и ниже -->
+   <!-- место favicon.ico в корневом каталоге - нет тегов необходимо -->
+   <!-- Значок в самом высоком разрешении нам нужен для -->
+   <link rel="icon" sizes="192x192" href="/path/to/icon.png">
+   <!-- Значок Apple Touch (повторное использование значка 192px.png) -->
+   <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
+   <!-- Значок вкладки Safari Pinned -->
+   <link rel="mask-icon" href="/path/to/icon.svg" color="blue">
 </head>
-<body>
-   <a href="doc1.md">doc</a>
-<p>О бесплатных книгах
-Если вам нравятся эти книги, прочитайте о  пяти простых способах продвижения бесплатных книг .
 
-Если вы думаете о написании бесплатной книги, вот причины, по которым вам следует это сделать, и предложения о том, как это сделать: Бесплатные книги: почему бы и нет? .
-Содержимое этого веб-сайта доступно по лицензии Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International ( CC BY-NC-SA 4.0 ).</p>
+<body>
+
+   <li><a href="doc1.md">doc1</a></li>
+   <li><a href="#">doc2</a></li>
+   <li><a href="#">doc3</a></li>
+   <li><a href="#">doc4</a></li>
+   <li><a href="#">doc5</a></li>
+   <li><a href="#">doc6</a></li>
+
+
+   
+<p>Easy Quest</p>
 </body>
 
 </html>
